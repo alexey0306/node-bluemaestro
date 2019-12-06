@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('bluemaestro',{
+        category: 'advanced',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "ruuvitag.png",
+        label: function() {
+            return this.name||"BlueMaestro";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="bluemaestro">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="BlueMaestro">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="bluemaestro">
+    <p>Takes node-red-contrib-noble scan object as input and replaces payload with JSON containing parsed data from BlueMaestro.</p>
+    <p>Payload field (i.e. msg.payload.) is temperature. Units are:</p>
+    <ul>
+      <li>Temperature: Celcius</li>
+    </ul>
+    <p>You might also be interested in other noble message data, such as msg.rssi or msg.peripheralUUID</p>
+</script>

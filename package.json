@@ -1,0 +1,24 @@
+{
+  "name": "node-bluemaestro",
+  "version": "1.0.0",
+  "description": "Read data from Blue Maestro sensors",
+  "main": "bluemaestro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexey0306/node-bluemaestro.git"
+  },
+  "author": "Alexey Zelenkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexey0306/node-bluemaestro/issues"
+  },
+  "homepage": "https://github.com/alexey0306/node-bluemaestro#readme",
+  "node-red": {
+        "nodes": {
+            "ruuvitag": "bluemaestro.js"
+        }
+    }
+}
