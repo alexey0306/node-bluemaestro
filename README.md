@@ -53,3 +53,21 @@ to
     "noble": "file://home/azelenkin/noble"
   },
 ```
+
+## Step 3. Installing the Node-RED Noble library
+In this step we will install the Node-RED Noble library as Node-RED module. In previous step we've changed the **noble** dependency to local one with Passive Scanning configured. In this step I am assuming the Node-RED is already installed on your system
+
+1. Install the Noble Node-RED module using the following command:
+```
+cd ~/.node-red
+npm install /home/azelenkin/node-red-contrib-noble/
+```
+2. Restart the Node-RED server
+3. If everything is fine, you should see the Scan BLE node in **advanced** section. 
+
+
+
+
+
+
+ 
